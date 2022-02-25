@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wilfolo</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+	<link rel="stylesheet" href="css/pink-color.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/banner.css">
+	<link rel="stylesheet" href="css/work.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/services.css">
+	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="css/feedback.css">
+	<link rel="stylesheet" href="css/authorization.css">
+	<link rel="stylesheet" href="css/thank.css">
+	<link rel="stylesheet" href="css/personal.css">
+	<link rel="stylesheet" href="css/chat.css">
+	<link rel="stylesheet" href="css/basket.css">
+	<link rel="stylesheet" href="css/user-management.css">
+	<link rel="stylesheet" href="css/profile.css">
+	<link rel="stylesheet" href="css/my-office.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+	<header>
+		<section class="header">
+			<div class="header__container container">
+				<div class="header__top">
+					<a href="" class="header__logo"><img src="img/logo-header.png" alt=""></a>
+				</div>
+				<div class="header__bottom">
+					<ul class="header__menu header-menu">
+						<li class="header-menu__item"><a href="">О нас</a></li>
+						<li class="header-menu__item"><a href="">Услуги</a></li>
+						<li class="header-menu__item"><a href="">Контакты</a></li>
+						<li class="header-menu__item -change"><a href="">Для бизнеса <img src="img/header-arrow.svg" alt=""></a></li>
+					</ul>
+					<div class="header__personal header-personal">
+						<!-- Состояние авторизованного пользователя -->
+						<!-- <a href="" class="header-personal__basket">Корзина <span>1900 ₽</span></a>
+						<a href="" class="header-personal__link">Личный кабинет</a> -->
+						<!-- Состояние неавторизованного пользователя -->
+						<div class="header-personal__authorization">
+							<a href="" class="header-personal__sign-up">Войти</a>
+							<a href="" class="header-personal__registration">Регистрация</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+	<main>
+		<div class="personal">
+			<div class="personal__container container">
+				<div class="personal__box">
+					<div class="personal__sidebar">
+						<span class="personal__nickname">Nickname</span>
+						<ul class="personal__menu personal-menu">
+							<li class="personal-menu__item"><a href="">Мой кабинет</a></li>
+							<li class="personal-menu__item"><a href="">Управление пользователями</a></li>
+							<li class="personal-menu__item"><a href="">История заказов</a></li>
+							<li class="personal-menu__item -active"><a href="">Настройка профиля</a></li>
+							<li class="personal-menu__item"><a href="">Выйти</a></li>
+						</ul>
+					</div>
+					<div class="personal__content">
+						<div class="profile">
+							<div class="profile__info profile-info">
+								<h2 class="profile__title">Настройки профиля</h2>
+								<div class="profile-info__list">
+									<div class="profile-info__item">
+										<div class="profile-info__name">Администратор</div>
+										<form action="" class="profile__form profile-form">
+											<div class="profile-form__fields">
+												<input type="text" placeholder="ФИО" value="Иванов Василий">
+											</div>
+											<div class="profile-form__btns">
+												<a href="" class="profile-form__cancel">Отменить</a>
+												<button type="submit" class="profile-form__submit">Сохранить</button>
+											</div>
+										</form>
+										<div class="profile-info__value">Иванов Василий</div>
+										<a href="" class="profile-info__change">Изменить</a>
+									</div>
+									<div class="profile-info__item">
+										<div class="profile-info__name">Номер телефона</div>
+										<form action="" class="profile__form profile-form">
+											<div class="profile-form__fields">
+												<input id="phone-mask" type="tel" placeholder="Телефон" value="+7 999 332 44 56">
+											</div>
+											<div class="profile-form__btns">
+												<a href="" class="profile-form__cancel">Отменить</a>
+												<button type="submit" class="profile-form__submit">Сохранить</button>
+											</div>
+										</form>
+										<div class="profile-info__value">+7 999 332 44 56</div>
+										<a href="" class="profile-info__change">Изменить</a>
+									</div>
+									<div class="profile-info__item">
+										<div class="profile-info__name">E-mail</div>
+										<form action="" class="profile__form profile-form">
+											<div class="profile-form__fields">
+												<input type="email" placeholder="E-mail" value="test-mail@gmail.com">
+											</div>
+											<div class="profile-form__btns">
+												<a href="" class="profile-form__cancel">Отменить</a>
+												<button type="submit" class="profile-form__submit">Сохранить</button>
+											</div>
+										</form>
+										<div class="profile-info__value">test-mail@gmail.com</div>
+										<a href="" class="profile-info__change">Изменить</a>
+									</div>
+									<div class="profile-info__item">
+										<div class="profile-info__name">Пароль</div>
+										<form id="form-password" action="" class="profile__form profile-form">
+											<div class="profile-form__fields">
+												<input type="password" placeholder="Пароль" value="123456">
+											</div>
+											<div class="profile-form__btns">
+												<a href="" class="profile-form__cancel">Отменить</a>
+												<button type="submit" class="profile-form__submit">Сохранить</button>
+											</div>
+										</form>
+										<div class="profile-info__value">Был изменен <span>24</span> дн. назад</div>
+										<a href="" class="profile-info__change">Изменить</a>
+									</div>
+								</div>
+							</div>
+							<div class="profile__pay profile-pay">
+								<h2 class="profile__title">Способы оплаты</h2>
+								<div class="profile-pay__empty">Вы еще не добавили способ оплаты</div>
+								<div class="profile-pay__list -hidden">
+									<!-- Карточка для банковской карты -->
+									<!-- <div class="profile-pay__item">
+										<img src="img/bank-card.svg" alt="">
+										<span class="name">*9900</span>
+										<a href="" class="close"><img src="img/card-delete.svg" alt=""></a>
+									</div> -->
+									<!-- Конец карточки банковской карты -->
+								</div>
+								<a href="" class="profile-pay__add">Добавить</a>
+								<div class="profile-pay__overlay"></div>
+								<form action="" class="profile-pay__modal profile-pay-modal">
+									<a href="" class="profile-pay-modal__close"><img src="img/form-close.svg" alt=""></a>
+									<h2 class="profile-pay-modal__title">Добавление карты</h2>
+									<div class="profile-pay-modal__fields">
+										<div class="profile-pay-modal__item">
+											<span class="profile-pay-modal__name">Номер карты</span>
+											<div class="profile-pay-modal__input">
+												<input type="text" placeholder="Номер">
+											</div>											
+										</div>
+										<div class="profile-pay-modal__item -expire">
+											<span class="profile-pay-modal__name">Срок истечения</span>
+											<div class="profile-pay-modal__input">
+												<label>Месяц</label>
+												<input type="text" class="month">
+											</div>
+											<div class="profile-pay-modal__input">
+												<label>Год</label>
+												<input type="text" class="year">
+											</div>											
+										</div>
+										<div class="profile-pay-modal__item">
+											<span class="profile-pay-modal__name">Имя держателя карты</span>
+											<div class="profile-pay-modal__input">
+												<input type="text" placeholder="Имя Фамилия">
+											</div>											
+										</div>
+										<div class="profile-pay-modal__item">
+											<span class="profile-pay-modal__name">CVV</span>
+											<div class="profile-pay-modal__input">
+												<input type="password" placeholder="***">
+											</div>											
+										</div>
+										<div class="profile-pay-modal__item">
+											<button type="submit" class="profile-pay-modal__submit">Сохранить</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="profile__subscribe profile-subscribe">
+								<h2 class="profile__title">Управление подписками</h2>
+								<div class="profile-subscribe__list">
+									<div class="profile-subscribe__row">
+										<div class="profile-subscribe__name">Телефон</div>
+										<div class="profile-subscribe__items">
+											<div class="profile-subscribe__item">
+												<span>Изменение статуса заказа</span>
+												<input id="phone-status" name="phone-status" type="checkbox">
+												<label for="phone-status"></label>
+											</div>
+											<div class="profile-subscribe__item">
+												<span>Акции</span>
+												<input id="phone-stock" name="phone-stock" type="checkbox">
+												<label for="phone-stock"></label>
+											</div>
+										</div>
+									</div>
+									<div class="profile-subscribe__row">
+										<div class="profile-subscribe__name">E-mail</div>
+										<div class="profile-subscribe__items">
+											<div class="profile-subscribe__item">
+												<span>Изменение статуса заказа</span>
+												<input id="email-status" name="email-status" type="checkbox">
+												<label for="email-status"></label>
+											</div>
+											<div class="profile-subscribe__item">
+												<span>Акции</span>
+												<input id="email-stock" name="email-stock" type="checkbox">
+												<label for="email-stock"></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer">
+			<div class="footer__container container">
+				<div class="footer__info">
+					<div class="footer__address">
+						Мы работаем каждый день с 00 до 00<br>
+						по адресу: Санкт-Петербург, просп. Малоохтинский, д. 64
+					</div>
+					<div class="footer__social social">
+						<a href="" class="social__item -mail -mask"></a>
+						<a href="" class="social__item -whatsapp -mask"></a>
+						<a href="" class="social__item -telegram -mask"></a>
+						<a href="" class="social__item -instagram -mask"></a>
+					</div>
+					<a href="tel:88009999999" class="footer__phone">8 800 999 99 99</a>
+					<div class="footer__rights">Wilfolo <i class="far fa-copyright"></i></div>
+				</div>				
+			</div>
+		</div>
+	</footer>
+	<script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+	<script defer src="https://unpkg.com/imask"></script>
+	<script defer src="js/script.js"></script>
+</body>
+</html>

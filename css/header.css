@@ -1,0 +1,150 @@
+.header {
+	padding: 30px 0 20px;
+	background-color: #ffffff;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+.header__top {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.header__logo {
+	width: 118px;
+}
+
+.header__logo img {
+	width: 100%;
+}
+
+.header__bottom {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-menu {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
+
+.header-menu__item {
+	list-style: none;
+}
+
+.header-menu__item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.header-menu__item > a {
+	display: inline-block;
+	font-family: Gilroy-Regular;
+	font-size: 14px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+	transition: 0.3s color;
+}
+
+.header-menu__item:hover > a {
+	color: var(--main-hover);
+}
+
+.header-menu__item.-change > a {
+	display: flex;
+	align-items: center;
+	font-family: Gilroy-Bold;
+	font-size: 14px;
+	line-height: 30px;
+	color: #FFFFFF;
+	padding: 0 25px;
+	background-color: var(--main-color);
+	border-radius: 5px;
+	box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.08);
+	transition: 0.3s background;
+}
+
+.header-menu__item.-change > a > img {
+	position: relative;
+	left: 0;
+	width: 20px;
+	margin-left: 15px;
+	transition: 0.3s left;
+}
+
+.header-menu__item.-change:hover > a {
+	background-color: var(--main-hover);
+}
+
+.header-menu__item.-change:hover > a > img {
+	left: 10px;
+}
+
+.header-personal {
+	position: absolute;
+	right: 0;
+}
+
+.header-personal {
+	display: flex;
+	align-items: center;
+}
+
+.header-personal__basket {
+	font-family: Gilroy-Regular;
+	font-size: 12px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+	transition: 0.3s color;
+	margin-right: 50px;
+}
+
+.header-personal__basket > span {
+	line-height: 30px;
+	margin-left: 15px;
+}
+
+.header-personal__basket:hover {
+	color: var(--main-hover);
+}
+
+.header-personal__link,
+.header-personal__sign-up,
+.header-personal__registration {
+	font-family: Gilroy-Regular;
+	font-size: 14px;
+	line-height: 30px;
+	color: var(--main-color);
+	text-transform: uppercase;
+	transition: 0.3s color;
+}
+
+.header-personal__link:hover,
+.header-personal__sign-up:hover,
+.header-personal__registration:hover {
+	color: #000000;
+}
+
+.header-personal__authorization {
+	display: flex;
+	align-items: center;
+}
+
+.header-personal__sign-up {
+	display: flex;
+	align-items: center;
+}
+
+.header-personal__sign-up::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 15px;
+	margin: 0 10px;
+	background-color: var(--main-color);
+}

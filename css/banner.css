@@ -1,0 +1,82 @@
+.banner {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+
+.banner__blur {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 60%;
+	background-color: rgba(255, 255, 255, 0.05);
+	-webkit-backdrop-filter: blur(30px);
+	backdrop-filter: blur(30px);
+}
+
+.banner__info {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 0 30px;
+	min-height: 820px;
+	margin-left: auto;
+}
+
+.banner__title {
+	font-family: CormorantUnicase-Bold;
+	font-size: 60px;
+	line-height: 80px;
+	text-align: right;
+	color: #FFFFFF;
+	margin: 0 0 30px;
+}
+
+.banner__subtitle {
+	font-family: Gilroy-Medium;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
+	margin: 0 0 40px;
+}
+
+.banner-btns {
+	display: flex;
+	align-items: center;
+}
+
+.banner-btns__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 50px;
+	height: 50px;
+	font-family: Gilroy-Bold;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.15em;
+	color: #000000;
+	text-transform: uppercase;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.15);
+	transition: 0.3s background;
+}
+
+.banner-btns__item:hover {
+	background-color: #EDEDED;
+}
+
+.banner-btns__item:nth-child(1) {
+	color: #FFFFFF;
+	background-color: var(--main-color);
+	margin-right: 20px;
+}
+
+.banner-btns__item:nth-child(1):hover {
+	background-color: var(--main-hover);
+}

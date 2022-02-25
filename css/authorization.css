@@ -1,0 +1,144 @@
+.authorization {
+	padding: 80px 0;
+	background-color: #F4F4F4;
+}
+
+.authorization__box {
+	display: flex;
+	justify-content: center;
+}
+
+.authorization__form {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	width: 100%;
+	padding: 50px 60px;
+	background-color: #FFFFFF;
+	box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.06);
+}
+
+.authorization__title {
+	display: flex;
+	align-items: center;
+	padding-right: 72px;
+	margin: 0 0 30px;
+}
+
+.authorization__title.-new-password {
+	padding-right: 0;
+}
+
+.authorization__back {
+	display: flex;
+	color: var(--main-color);
+	transition: 0.3s color;
+}
+
+.authorization__back:hover {
+	color: var(--main-hover);
+}
+
+.authorization__title span {
+	font-family: Gilroy-Medium;
+	font-size: 25px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	color: #1A1A1A;
+	margin: 0 auto;
+}
+
+.authorization__hint {
+	font-family: Gilroy-UltraLight;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	color: #1A1A1A;
+	margin: 0 0 30px;
+}
+
+.authorization__fields {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.authorization__fields input {
+	font-family: Gilroy-UltraLight;
+	font-size: 15px;
+	color: #000000;
+	width: 100%;
+	height: 35px;
+	padding: 0 15px;
+	border: 1px solid var(--main-color);
+	border-radius: 2px;
+}
+
+.authorization__fields input::placeholder {
+	opacity: 0.6;
+}
+
+.authorization__fields input:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.authorization__forget {
+	font-family: Gilroy-UltraLight;
+	font-size: 13px;
+	line-height: 30px;
+	color: rgba(0, 0, 0, 0.4);
+	margin-top: -30px;
+	margin-bottom: 10px;
+	transition: 0.3s color;
+}
+
+.authorization__forget:hover {
+	color: var(--main-hover);
+}
+
+.authorization__submit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	font-family: Gilroy-Black;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border: none;
+	background-color: var(--main-color);
+	cursor: pointer;
+	transition: 0.3s background;
+}
+
+.authorization__submit:hover {
+	background-color: var(--main-hover);
+}
+
+.authorization__registration {
+	font-family: Gilroy-UltraLight;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	color: #1A1A1A; 
+	margin: 30px 0 0;
+}
+
+.authorization__registration a {
+	font-family: Gilroy-Medium;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	color: #1A1A1A;
+	margin-left: 10px;
+	transition: 0.3s color;
+}
+
+.authorization__registration a:hover {
+	color: var(--main-hover);
+}

@@ -1,0 +1,73 @@
+.personal {
+	padding: 80px 0;
+	background-color: #F4F4F4;
+}
+
+.personal__box {
+	display: flex;
+	align-items: flex-start;
+	padding: 80px 60px;
+	background-color: #FFFFFF;
+	box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.08);
+}
+
+.personal__sidebar {
+	position: sticky;
+	top: 30px;
+	width: 17.5%;
+	flex-shrink: 0;
+	margin-right: 60px;
+}
+
+.personal__nickname {
+	display: block;
+	font-family: Gilroy-Regular;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.15em;
+	color: #000000;
+	margin: 0 0 40px;
+}
+
+.personal-menu {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+}
+
+.personal-menu__item {
+	list-style: none;
+}
+
+.personal-menu__item > a {
+	font-family: Gilroy-Regular;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	color: #000000;
+	transition: 0.3s color;
+}
+
+.personal-menu__item.-active > a {
+	font-family: Gilroy-Semibold;
+}
+
+.personal-menu__item:hover > a {
+	color: var(--main-hover);
+}
+
+.personal-menu__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.personal-menu__item:last-child {
+	margin-top: 25px;
+}
+
+.personal__content {
+	flex-grow: 1;
+	min-height: 210px;
+	padding: 60px 40px;
+	border: 1px solid var(--main-color);
+}

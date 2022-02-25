@@ -1,0 +1,199 @@
+.basket {
+	padding: 80px 0;
+	background-color: #F4F4F4;
+}
+
+.basket__box {
+	padding: 80px 210px;
+	background-color: #FFFFFF;
+	box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.08);
+}
+
+.basket__inner {
+	padding: 60px 90px;
+	border: 1px solid var(--main-color);
+}
+
+.basket__title {
+	font-family: Gilroy-Regular;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.2em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	margin: 0 0 50px;
+}
+
+.basket__list {
+	padding: 50px 50px 60px;
+	box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.06);
+	margin-bottom: 40px;
+}
+
+.basket-item:not(:last-child) {
+	padding-bottom: 20px;
+	border-bottom: 1px solid var(--main-color);
+	margin-bottom: 20px;
+}
+
+.basket-item__main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.basket-item__main > span,
+.basket-item__extra > span {
+	font-family: Gilroy-Regular;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+.basket-item__extra > span {
+	font-size: 13px;
+}
+
+.basket-item__main > span.name,
+.basket-item__extra > span.name {
+	max-width: 75%;
+	margin-right: 30px;
+}
+
+.basket-item__main > span.cost,
+.basket-item__extra > span.cost {
+	text-align: right;
+}
+
+.basket-item__extra {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.basket-item__remove {
+	text-align: right;
+	margin-top: 20px;
+}
+
+.basket-item__remove > a {
+	font-family: Gilroy-Regular;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	color: var(--main-color);
+	transition: 0.3s color;
+}
+
+.basket-item__remove > a:hover {
+	color: var(--main-hover);
+}
+
+.basket-item__extra + .basket-item__remove {
+	margin-top: 20px;
+}
+
+.basket-item__main + .basket-item__remove {
+	margin-top: 0;
+}
+
+.basket__bottom {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.basket__clear {
+	font-family: Gilroy-Regular;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	color: var(--main-color);
+	transition: 0.3s color;
+}
+
+.basket__clear:hover {
+	color: var(--main-hover);
+}
+
+.basket__info {
+	width: 280px;
+	padding: 20px;
+	border: 1px solid #000000;
+}
+
+.basket__total {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: Gilroy-Regular;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.basket__total::before {
+	content: "Итого";
+	font-family: Gilroy-Regular;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+}
+
+.basket__accept {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 35px;
+	font-family: Gilroy-Bold;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background-color: var(--main-color);
+	box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.1);
+	transition: 0.3s background;
+}
+
+.basket__accept:hover {
+	background-color: var(--main-hover);
+}
+
+.basket__back {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 35px;
+	font-family: Gilroy-Bold;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background-color: var(--main-color);
+	box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.1);
+	transition: 0.3s background;
+}
+
+.basket__back:hover {
+	background-color: var(--main-hover);
+}
+
+.basket__back.-show {
+	display: flex;
+}
+
+.basket__list.-hidden,
+.basket__bottom.-hidden {
+	display: none;
+}
